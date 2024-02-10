@@ -1,0 +1,28 @@
+{
+  "name": "nuxt3-vitest",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "nuxt": "^3.10.1",
+    "vue": "^3.4.15",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^2.4.4",
+    "happy-dom": "^13.3.8",
+    "prettier": "^3.2.5",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-vue-components": "^0.26.0",
+    "vite-plugin-vuetify": "^2.0.1",
+    "vitest": "^1.2.2",
+    "vuetify": "^3.5.3"
+  }
+}
