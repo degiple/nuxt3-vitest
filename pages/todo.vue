@@ -8,11 +8,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import TodoList from '~/components/TodoList.vue';
-import AddTodo from '~/components/AddTodo.vue';
 
 const todos = ref<Todo[]>([]);
-
 const addTodo = (todo: Todo) => {
   todos.value.push(todo);
 };

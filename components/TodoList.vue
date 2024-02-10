@@ -5,12 +5,10 @@
 </template>
 
 <script setup lang="ts">
-
-const emit = defineEmits(['remove-todo']);
 const props = defineProps<{
   todos: Todo[];
 }>();
-
+const emit = defineEmits(['remove-todo']);
 const removeTodo = (index: number) => {
   emit('remove-todo', index);
 };

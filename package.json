@@ -8,7 +8,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "test": "vitest"
+    "test": "vitest",
+    "storybook": "storybook dev --port 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "nuxt": "^3.10.1",
@@ -16,9 +18,23 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@nuxtjs/storybook": "7.0.0",
+    "@storybook-vue/nuxt": "0.2.1",
+    "@storybook/addon-essentials": "^7.6.13",
+    "@storybook/addon-interactions": "^7.6.13",
+    "@storybook/addon-links": "^7.6.13",
+    "@storybook/addon-mdx-gfm": "^7.6.13",
+    "@storybook/blocks": "^7.6.13",
+    "@storybook/testing-library": "^0.2.0",
+    "@storybook/vue3": "^7.6.13",
+    "@storybook/vue3-vite": "^7.6.13",
+    "@types/node": "^18.17.5",
     "@vue/test-utils": "^2.4.4",
     "happy-dom": "^13.3.8",
     "prettier": "^3.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.13",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0",
     "vite-plugin-vuetify": "^2.0.1",
