@@ -6,5 +6,7 @@ const increment = () => {
 </script>
 
 <template>
-  <VBtn variant="flat" color="primary" @click="increment">{{ counter }}</VBtn>
+  <VBtn variant="flat" color="primary" @click="increment">
+    {{ counter }}
+  </VBtn>
 </template>
