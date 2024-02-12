@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     transpile: ['vuetify']
   },
   imports: {
-    dirs: ['types/**']
+    dirs: ['types']
   },
   modules: [
     // vuetify
