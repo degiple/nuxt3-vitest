@@ -5,6 +5,8 @@
 .nitro
 .cache
 dist
+auto-imports.d.ts
+components.d.ts
 
 # Node dependencies
 node_modules
