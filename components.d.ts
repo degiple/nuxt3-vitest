@@ -7,11 +7,11 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    AddTodo: typeof import('./components/AddTodo.vue')['default']
-    IncButton: typeof import('./components/IncButton.vue')['default']
-    RouterLink: typeof import('vue-router')['RouterLink']
-    RouterView: typeof import('vue-router')['RouterView']
-    TodoItem: typeof import('./components/TodoItem.vue')['default']
-    TodoList: typeof import('./components/TodoList.vue')['default']
+    TodoAdd: (typeof import('./components/TodoAdd.vue'))['default']
+    IncButton: (typeof import('./components/IncButton.vue'))['default']
+    RouterLink: (typeof import('vue-router'))['RouterLink']
+    RouterView: (typeof import('vue-router'))['RouterView']
+    TodoItem: (typeof import('./components/TodoItem.vue'))['default']
+    TodoList: (typeof import('./components/TodoList.vue'))['default']
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1 class="title">Todoリスト</h1>
-    <AddTodo @add-todo="addTodo" />
+    <TodoAdd @add-todo="TodoAdd" />
     <TodoList :todos="todos" @remove-todo="removeTodo" />
   </div>
 </template>
@@ -10,7 +10,7 @@
 import { ref } from 'vue';
 
 const todos = ref<Todo[]>([]);
-const addTodo = (todo: Todo) => {
+const TodoAdd = (todo: Todo) => {
   todos.value.push(todo);
 };
 

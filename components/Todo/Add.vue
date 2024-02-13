@@ -1,5 +1,5 @@
 <template>
-  <form class="add-todo-form" @submit.prevent="addTodo">
+  <form class="add-todo-form" @submit.prevent="TodoAdd">
     <input v-model="newTodo.text" type="text" placeholder="新しいTodoを追加" />
     <button type="submit">追加</button>
   </form>
@@ -12,7 +12,7 @@ const emit = defineEmits(['add-todo']);
 
 const newTodo = ref<Todo>({ text: '' });
 
-const addTodo = () => {
+const TodoAdd = () => {
   if (newTodo.value.text.trim()) {
     emit('add-todo', { ...newTodo.value });
     newTodo.value.text = '';
