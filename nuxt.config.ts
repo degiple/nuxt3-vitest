@@ -7,16 +7,17 @@ export default defineNuxtConfig({
     transpile: ['vuetify']
   },
   imports: {
-    dirs: ['utils/**', 'types/**']
+    dirs: ['types']
   },
   modules: [
+    // vuetify
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
         // @ts-expect-error
         config.plugins.push(vuetify({ autoImport: true }))
       })
-    }
-    //...
+    },
+    '@nuxtjs/storybook'
   ],
   vite: {
     vue: {

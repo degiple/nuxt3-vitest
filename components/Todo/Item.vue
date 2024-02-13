@@ -6,9 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
 const emit = defineEmits(['remove-todo']);
-
 const props = defineProps<{
   todo: Todo;
 }>();

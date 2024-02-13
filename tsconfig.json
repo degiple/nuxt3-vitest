@@ -3,6 +3,5 @@
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "types": ["vitest/globals"],
-  },
-  "exclude": ["node_modules/"]
+  }
 }
