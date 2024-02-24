@@ -1,6 +1,6 @@
 <template>
   <VContainer>
-    倉さんボタン
+    Increment Button
     <IncButton />
   </VContainer>
 </template>
