@@ -11,6 +11,16 @@
     "test": "vitest",
     "lint": "eslint --fix ."
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.ts": "eslint --cache --fix",
+    "*.vue": "eslint --cache --fix"
+  },
   "dependencies": {
     "nuxt": "^3.10.2",
     "vue": "^3.4.15",
@@ -18,21 +28,23 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@nuxtjs/eslint-module": "^4.1.0",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
+    "@vitejs/plugin-vue": "^5.0.4",
     "@vue/test-utils": "^2.4.4",
     "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-unused-imports": "^3.1.0",
     "eslint-plugin-vue": "^9.21.1",
     "happy-dom": "^13.3.8",
-    "prettier": "^3.2.5",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0",
     "vite-plugin-vuetify": "^2.0.1",
     "vitest": "^1.2.2",
+    "vue-eslint-parser": "^9.4.2",
     "vuetify": "^3.5.3"
   }
 }
