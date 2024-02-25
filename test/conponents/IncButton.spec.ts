@@ -1,10 +1,10 @@
-import IncButtonVue from '~/components/IncButton.vue'
 import { mount } from '@vue/test-utils'
+import IncButtonVue from '~/components/IncButton.vue'
 
 describe('IncButton.vue', () => {
   test('表示', () => {
     const wrapper = mount(IncButtonVue)
-    console.log(wrapper.html())
+    // console.log(wrapper.html())
     expect(wrapper.exists()).toBeTruthy()
   })
 
