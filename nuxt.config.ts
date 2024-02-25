@@ -3,6 +3,9 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  imports: {
+    dirs: ['types']
+  },
   modules: [
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
@@ -14,9 +17,6 @@ export default defineNuxtConfig({
   ],
   build: {
     transpile: ['vuetify']
-  },
-  imports: {
-    dirs: ['types']
   },
   vite: {
     vue: {

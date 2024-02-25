@@ -4,13 +4,12 @@ import { ref } from 'vue'
 const emit = defineEmits(['add-todo'])
 const newTodo = ref<Todo>({ text: '' })
 
-const addTodo = (): void => {
+const addTodo = () => {
   if (newTodo.value.text.trim()) {
     emit('add-todo', { ...newTodo.value })
     newTodo.value.text = ''
   }
 }
-
 </script>
 
 <template>
@@ -29,4 +28,3 @@ const addTodo = (): void => {
   margin-bottom: 20px;
 }
 </style>
-~/utils/todo
