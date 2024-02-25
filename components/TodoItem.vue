@@ -1,22 +1,19 @@
+<script setup lang="ts">
+const emit = defineEmits(['remove-todo'])
+const props = defineProps<{ todo: Todo;}>()
+const removeTodo = () => {
+  emit('remove-todo')
+}
+</script>
+
 <template>
   <li class="todo-item">
     {{ todo.text }}
-    <button class="remove-btn" @click="removeTodo">削除</button>
+    <button class="remove-btn" @click="removeTodo">
+      削除
+    </button>
   </li>
 </template>
-
-<script setup lang="ts">
-import { defineProps } from 'vue';
-const emit = defineEmits(['remove-todo']);
-
-const props = defineProps<{
-  todo: Todo;
-}>();
-
-const removeTodo = () => {
-  emit('remove-todo');
-};
-</script>
 
 <style scoped>
 .todo-item {

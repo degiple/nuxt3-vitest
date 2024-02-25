@@ -1,36 +1,36 @@
+import path from 'path'
 import { defineConfig } from 'vitest/config'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import path from 'path'
 import vuetify from 'vite-plugin-vuetify'
 
 export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      imports: ['vue'],
+      imports: ['vue']
     }),
     Components({
-      dirs: ['components'],
+      dirs: ['components']
     }),
     vuetify({
-      autoImport: true,
-    }),
+      autoImport: true
+    })
   ],
   resolve: {
     alias: {
-      '~': path.resolve(__dirname, './'),
-    },
+      '~': path.resolve(__dirname, './')
+    }
   },
   test: {
     globals: true,
     environment: 'happy-dom',
     server: {
       deps: {
-        inline: ['vuetify'],
-      },
+        inline: ['vuetify']
+      }
     },
-    setupFiles: path.resolve(__dirname, './test/setup.ts'),
-  },
+    setupFiles: path.resolve(__dirname, './test/setup.ts')
+  }
 })
