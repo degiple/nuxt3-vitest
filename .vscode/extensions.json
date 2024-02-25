@@ -1,5 +1,9 @@
 {
   "recommendations": [
-    "misterj.vue-volar-extention-pack"
+    "misterj.vue-volar-extention-pack",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "donjayamanne.githistory",
+    "dbaeumer.vscode-eslint"
   ]
 }
