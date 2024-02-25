@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const emit = defineEmits(['remove-todo'])
-const props = defineProps<{
+defineProps<{
   todos: Todo[];
 }>()
 
