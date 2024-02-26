@@ -4,6 +4,13 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ## Setup
 
+git setting:
+
+```bash
+git config --global user.email "xxx@xxx"
+git config --global user.name "XXX XXX"
+```
+
 Make sure to install the dependencies:
 
 ```bash
