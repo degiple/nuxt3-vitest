@@ -1,8 +1,9 @@
 {
   "recommendations": [
-    "misterj.vue-volar-extention-pack",
     "mhutchie.git-graph",
     "donjayamanne.githistory",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "vue.volar",
+    "johnsoncodehk.vscode-typescript-vue-plugin"
   ]
 }
