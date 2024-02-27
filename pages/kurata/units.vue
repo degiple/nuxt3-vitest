@@ -26,3 +26,16 @@ const ftoC = () => {
   celsius.value = Math.round((((fahrenheit.value - 32) * 5) / 9) * 100) / 100
 }
 </script>
+
+<style scoped>
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+</style>
