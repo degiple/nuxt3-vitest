@@ -3,7 +3,7 @@
     "mhutchie.git-graph",
     "donjayamanne.githistory",
     "dbaeumer.vscode-eslint",
-    "vue.volar",
-    "johnsoncodehk.vscode-typescript-vue-plugin"
+    "johnsoncodehk.vscode-typescript-vue-plugin",
+    "vue.volar"
   ]
 }
